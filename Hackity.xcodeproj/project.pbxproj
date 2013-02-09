@@ -17,6 +17,9 @@
 		4BA5B61816C33F9A00130792 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5B5F816C33F9900130792 /* Cocoa.framework */; };
 		4BA5B62016C33F9A00130792 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA5B61E16C33F9A00130792 /* InfoPlist.strings */; };
 		4BA5B62316C33F9A00130792 /* HackityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B62216C33F9A00130792 /* HackityTests.m */; };
+		4BA5B63C16C35BC500130792 /* StoryClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B63B16C35BC500130792 /* StoryClient.m */; };
+		4BA5B64616C37F4900130792 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA5B64516C37F4900130792 /* Story.m */; };
+		95936F3F2B684540BFA16B0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C14B6055A444AF5B9E76CC8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		4BA5B61F16C33F9A00130792 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BA5B62116C33F9A00130792 /* HackityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackityTests.h; sourceTree = "<group>"; };
 		4BA5B62216C33F9A00130792 /* HackityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackityTests.m; sourceTree = "<group>"; };
+		4BA5B63A16C35BC500130792 /* StoryClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryClient.h; sourceTree = "<group>"; };
+		4BA5B63B16C35BC500130792 /* StoryClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryClient.m; sourceTree = "<group>"; };
+		4BA5B64416C37F4900130792 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		4BA5B64516C37F4900130792 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		7C14B6055A444AF5B9E76CC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCD39116CC24DA1BA7E4D31 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA5B5F916C33F9900130792 /* Cocoa.framework in Frameworks */,
+				95936F3F2B684540BFA16B0F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,7 @@
 				4BA5B61B16C33F9A00130792 /* HackityTests */,
 				4BA5B5F716C33F9900130792 /* Frameworks */,
 				4BA5B5F516C33F9900130792 /* Products */,
+				FDCD39116CC24DA1BA7E4D31 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +108,7 @@
 				4BA5B5F816C33F9900130792 /* Cocoa.framework */,
 				4BA5B61616C33F9A00130792 /* SenTestingKit.framework */,
 				4BA5B5FA16C33F9900130792 /* Other Frameworks */,
+				7C14B6055A444AF5B9E76CC8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +126,8 @@
 		4BA5B5FE16C33F9900130792 /* Hackity */ = {
 			isa = PBXGroup;
 			children = (
+				4BA5B63916C35A2400130792 /* Controllers */,
+				4BA5B63716C35A1D00130792 /* Models */,
 				4BA5B60A16C33F9900130792 /* AppDelegate.h */,
 				4BA5B60B16C33F9900130792 /* AppDelegate.m */,
 				4BA5B60D16C33F9900130792 /* MainMenu.xib */,
@@ -153,6 +167,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4BA5B63716C35A1D00130792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B63A16C35BC500130792 /* StoryClient.h */,
+				4BA5B63B16C35BC500130792 /* StoryClient.m */,
+				4BA5B64416C37F4900130792 /* Story.h */,
+				4BA5B64516C37F4900130792 /* Story.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4BA5B63916C35A2400130792 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +195,7 @@
 				4BA5B5F016C33F9900130792 /* Sources */,
 				4BA5B5F116C33F9900130792 /* Frameworks */,
 				4BA5B5F216C33F9900130792 /* Resources */,
+				06D1036688ED4BD4AD64CF31 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +274,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		06D1036688ED4BD4AD64CF31 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		4BA5B61316C33F9A00130792 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +310,8 @@
 			files = (
 				4BA5B60516C33F9900130792 /* main.m in Sources */,
 				4BA5B60C16C33F9900130792 /* AppDelegate.m in Sources */,
+				4BA5B63C16C35BC500130792 /* StoryClient.m in Sources */,
+				4BA5B64616C37F4900130792 /* Story.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +424,7 @@
 		};
 		4BA5B62716C33F9A00130792 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCD39116CC24DA1BA7E4D31 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -387,6 +437,7 @@
 		};
 		4BA5B62816C33F9A00130792 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCD39116CC24DA1BA7E4D31 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -446,6 +497,7 @@
 				4BA5B62816C33F9A00130792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BA5B62916C33F9A00130792 /* Build configuration list for PBXNativeTarget "HackityTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +506,7 @@
 				4BA5B62B16C33F9A00130792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

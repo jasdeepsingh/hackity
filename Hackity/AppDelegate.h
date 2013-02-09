@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "INAppStoreWindow.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource, NSTableViewDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet INAppStoreWindow *window;
+@property (retain, nonatomic) IBOutlet NSTableView *storiesTable;
+@property (nonatomic, retain) NSArray *stories;
 
 @end
